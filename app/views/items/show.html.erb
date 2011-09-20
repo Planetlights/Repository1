@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+<font color="#ffffff">
+  <b>Bericht:</b>
+  <%= @item.what %>
+</p>
+
+<p>
+  <b>Stichpunkte:</b>
+  <%= @item.how_much %>
+</p>
+
+<p>
+  <b>Datum:</b>
+  <%= @item.datum %>
+</font>
+</p>
+
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>

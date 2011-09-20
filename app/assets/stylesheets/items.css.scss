@@ -1,0 +1,67 @@
+// Place all the styles related to the items controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+a
+{
+-webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+
+}
+
+.roterrand
+{
+border: 2px solid #3c3841;    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+}
+
+.gruenerhintergrund
+{
+background:#847991;
+}
+
+
+#eineebene
+{
+     border: 12px solid #293438;margin-left: 220px;margin-right: 0px;background:#293438;-webkit-border-radius: 50px
+}
+
+#eineweitereebene
+{
+     border: 0px solid #847991;
+}
+
+
+#Berichtliste
+{
+color: #ffffff;
+font-family: 'NunitoRegular';
+}
+
+
+.berichte
+{
+       border: 5px solid #9ccf10;-webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background:#9ccf10;
+    width:100px; position:absolute; top:90px; left:40px;
+
+}
+.bilder
+{
+       border: 5px solid #9ccf10;-webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background:#9ccf10;
+    width:100px; position:absolute; top:165px; left:40px;
+
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Praktikum</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+
+  <%= csrf_meta_tags %>
+
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" type="text/css" media="all" />
+			<link rel="stylesheet" href="http://static.jquery.com/ui/css/demo-docs-theme/ui.theme.css" type="text/css" media="all" />
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+			<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+			<script src="http://jquery-ui.googlecode.com/svn/tags/latest/external/jquery.bgiframe-2.1.2.js" type="text/javascript"></script>
+			<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/i18n/jquery-ui-i18n.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $("#item_datum").datepicker();
+  });
+  jQuery(function($){
+        $.datepicker.regional['de'] = {clearText: 'loeschen', clearStatus: 'aktuelles Datum loeschen',
+                closeText: 'schliessen', closeStatus: 'ohne Aenderungen schliessen',
+                prevText: '<zurueck', prevStatus: 'letzten Monat zeigen',
+                nextText: 'Vor>', nextStatus: 'naechsten Monat zeigen',
+                currentText: 'heute', currentStatus: '',
+                monthNames: ['Januar','Februar','Maerz','April','Mai','Juni',
+                'Juli','August','September','Oktober','November','Dezember'],
+                monthNamesShort: ['Jan','Feb','Maer','Apr','Mai','Jun',
+                'Jul','Aug','Sep','Okt','Nov','Dez'],
+                monthStatus: 'anderen Monat anzeigen', yearStatus: 'anderes Jahr anzeigen',
+                weekHeader: 'Wo', weekStatus: 'Woche des Monats',
+                dayNames: ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'],
+                dayNamesShort: ['So','Mo','Di','Mi','Do','Fr','Sa'],
+                dayNamesMin: ['So','Mo','Di','Mi','Do','Fr','Sa'],
+                dayStatus: 'Setze DD als ersten Wochentag', dateStatus: 'Waehle D, M d',
+                dateFormat: 'dd.mm.yy', firstDay: 1,
+                initStatus: 'Waehle ein Datum', isRTL: false};
+        $.datepicker.setDefaults($.datepicker.regional['de']);
+});
+  </script>
+          <link rel="stylesheet" href="/Font/specimen_files/stylesheet.css" type="text/css" charset="utf-8" />
+
+</head>
+<body style="background-image:url(http://localhost:3000/background1.jpg);padding:15px;">
+<div class="signedin" id="user_nav">
+  <% if user_signed_in? %>
+    Signed in as <%= current_user.email %>. Not you?
+    <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+  <% else %>
+    <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
+  <% end %>
+</div>
+  <div class="roterrand" id="eineebene" style="">
+
+
+
+       <%= yield %>
+        <div class="roterrand gruenerhintergrund" id="eineweitereebene" style="">
+        </div>
+    </div>
+        <li class="berichte"><a href="http://localhost:3000/items">Berichte</a></li>
+                <li class="bilder"><a href="">Bilder</a></li>
+
+</body>
+</html>

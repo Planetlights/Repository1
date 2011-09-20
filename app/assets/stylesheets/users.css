@@ -1,0 +1,13 @@
+.user_edit div label
+{
+ background:red;
+}
+
+.signedin
+{
+ width:100px;
+ position:absolute;
+ top:20px;
+ right:100px;
+ background: white;
+}

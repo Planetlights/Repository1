@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  what: MyString
+  how_much: MyString
+  price: 1.5
+
+two:
+  what: MyString
+  how_much: MyString
+  price: 1.5
