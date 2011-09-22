@@ -1,13 +1,23 @@
 .user_edit div label
 {
- background:red;
+color: #ffffff;
 }
 
 .signedin
 {
- width:100px;
+ width:280px;
  position:absolute;
- top:20px;
- right:100px;
- background: white;
+ top:5px;
+ right:50px;
+}
+
+
+#user_nav
+{
+color: #ffffff;;
+}
+
+#user_new
+{
+color: #ffffff;
 }
