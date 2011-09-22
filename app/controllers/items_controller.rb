@@ -1,4 +1,5 @@
 class ItemsController < ApplicationController
+  before_filter :authenticate_user!, :expect => [:show, :index]
   # GET /items
   # GET /items.json
   def index
