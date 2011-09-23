@@ -4,16 +4,18 @@
     <th>Bericht</th>
     <th>Stichpunkte</th>
     <th>Datum</th>
-    <th></th>
+    <th>Benutzer</th>
     <th></th>
     <th></th>
   </tr>
 
 <% @items.each do |item| %>
   <tr>
-    <td><span style="font-family: 'NunitoRegular'"><%= item.what[0...100] %></span></td>
+  <td>*<%= if item.user == current_user then "ddd2" end%></td>
+    <td class="Berichtrahmen" ><span style="font-family: 'NunitoRegular'"><%= item.what[0...100] %></span></td>
     <td><%= item.how_much %></td>
     <td><%= item.datum %></td>
+    <td><%= item.user.email unless item.user.nil? %></id>
     <td><%= link_to 'Show', item %></td>
     <td><%= link_to 'Edit', edit_item_path(item) %></td>
     <td><%= link_to 'Destroy', item, confirm: 'Are you sure?', method: :delete %></td>

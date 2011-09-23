@@ -29,7 +29,7 @@ background:#847991;
 
 #eineebene
 {
-     border: 12px solid #293438;margin-left: 190px;margin-right: 0px;margin-top: 190px;background:#293438;-webkit-border-radius: 50px
+     border: 12px solid #293438;margin-left: 215px;margin-right: 0px;margin-top: 202px;background:#293438;-webkit-border-radius: 50px
 }
 
 #eineebene h2
@@ -74,4 +74,19 @@ font-family: 'NunitoRegular';
     background:#9ccf10;
     width:100px; position:absolute; top:165px; left:40px;
 
+}
+
+.Berichtrahmen
+{
+  border: 1px solid #f19324;-webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.banner
+{
+background: #f19324;margin-top: 0px;margin-left: 0px;margin-right: 0px;width: 100%;-webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px; 
+    -moz-border-radius: 5px; 
 }
