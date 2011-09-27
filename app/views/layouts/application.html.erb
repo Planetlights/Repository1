@@ -42,7 +42,7 @@
           <link rel="stylesheet" href="/Font/specimen_files/stylesheet.css" type="text/css" charset="utf-8" />
 
 </head>
-<body style="background-image:url(http://localhost:3000/background1.jpg);margin: 0px;">
+<body style="background-image:url(/background1.jpg);margin: 0px;">
 <div class="signedin, banner" id="user_nav">
   <% if user_signed_in? %>
     Signed in as <%= current_user.email %>. Not you?
@@ -51,8 +51,11 @@
     <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
   <% end %>
   
+  
 </div>
+<div class= "egg"></div>
   <div class="roterrand" id="eineebene" style="">
+    
 
 
 
@@ -60,7 +63,7 @@
         <div class="roterrand gruenerhintergrund" id="eineweitereebene" style="">
         </div>
     </div>
-        <li class="berichte"><a href="http://localhost:3000/items">Berichte</a></li>
+        <li class="berichte"><a href="/items">Berichte</a></li>
                 <li class="bilder"><a href="">Bilder</a></li>
 
 </body>
