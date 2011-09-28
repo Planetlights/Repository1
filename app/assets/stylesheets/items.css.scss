@@ -93,5 +93,19 @@ background: #f19324;margin-top: 0px;margin-left: 0px;margin-right: 0px;width: 10
 
 .egg
 {
-  border: 3px solid red;margin-top: 30px;margin-right: 600px;margin-left: 200px;
+width:173px; position:absolute; top:60px; left:410px;display:block;height: 70px;
+ 
+  
+}  
+
+.egg1
+{
+width: 173px;height: 70px;position:absolute; top: 0px;left: 400px;display:block;
+color: green;font-size: 5px;font-family: monospace;line-height: 5px;
 }
+
+div.egg:hover {display:block;}
+div.egg div.egg1 {display:none;}
+div.egg:hover div.egg1{display:block;}
+  
+  
