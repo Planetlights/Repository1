@@ -1,7 +1,12 @@
 <font color="#ffffff"><h1>Bericht korrigieren</h1></font>
 
-
+<% if @item.user == current_user then %> 
 <%= render 'form' %>
+<%else%>
+<font color="#ffffff">
+  Den Bericht den du änderen möchtest gehört nicht dir; Hacking?!
+<%end%>
 
 <%= link_to 'Show', @item %> |
 <%= link_to 'Back', items_path %>
+

@@ -7,10 +7,10 @@
   <%= javascript_include_tag "application" %>
 
   <%= csrf_meta_tags %>
-
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" type="text/css" media="all" />
 			<link rel="stylesheet" href="http://static.jquery.com/ui/css/demo-docs-theme/ui.theme.css" type="text/css" media="all" />
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+			<link rel="stylesheet" href="/Print.css" type="text/css" media="print" />
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
 			<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
 			<script src="http://jquery-ui.googlecode.com/svn/tags/latest/external/jquery.bgiframe-2.1.2.js" type="text/javascript"></script>
 			<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/i18n/jquery-ui-i18n.min.js" type="text/javascript"></script>
@@ -37,13 +37,13 @@
                 dateFormat: 'dd.mm.yy', firstDay: 1,
                 initStatus: 'Waehle ein Datum', isRTL: false};
         $.datepicker.setDefaults($.datepicker.regional['de']);
-});
+      });
   </script>
           <link rel="stylesheet" href="/Font/specimen_files/stylesheet.css" type="text/css" charset="utf-8" />
 
 </head>
 <body style="background-image:url(/background1.jpg);margin: 0px;">
-<div class="signedin, banner" id="user_nav">
+    <div class="signedin, banner" id="user_nav">
   <% if user_signed_in? %>
     Signed in as <%= current_user.email %>. Not you?
     <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
@@ -53,6 +53,10 @@
   
   
 </div>
+  <div style="background-image:url(/rechteck.png);margin-top: 50px;margin-left: 50px;margin-right:auto;margin-bottom:auto;min-height:1200px;">
+   &nbsp;
+  
+  
 <div class= "egg">
   <div class= "egg1">
                                                                
@@ -180,8 +184,9 @@
         <div class="roterrand gruenerhintergrund" id="eineweitereebene" style="">
         </div>
     </div>
-        <li class="berichte"><a href="/items">Berichte</a></li>
-                <li class="bilder"><a href="">Bilder</a></li>
+    <ul style="list-style:none"><li class="berichte"><a href="/items">Berichte</a></li>
+                <li class="bilder"><a href="">Bilder</a></li></ul>
+</div>
 
 </body>
 </html>

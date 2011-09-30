@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<% if @item.user == current_user then %> 
 <p>
 <font color="#ffffff">
   <b>Bericht:</b>
@@ -16,7 +16,13 @@
   <%= @item.datum %>
 </font>
 </p>
+<%else%>
+<font color="#ffffff">
+Das ist nicht dein Bericht; Hacking ?!
 
+<% end%>
 
+<div class="EnB">
 <%= link_to 'Edit', edit_item_path(@item) %> |
 <%= link_to 'Back', items_path %>
+</div>
